@@ -10,6 +10,11 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+counter = 0
+while counter < 88:
+    lisas[]
+    lisas.append(associations[counter]
+print(lisas)
 do = False
 while do == False:
     befehl = str.lower(input("Enter e to encrypt, d to decrypt, or q to quit: "))
@@ -17,6 +22,7 @@ while do == False:
         do = True
         msg = str(input("Message: "))
         ky = str(input("Key: "))
+
     elif befehl == 'd':
         do = True
         msg = str(input("Message: "))
