@@ -11,10 +11,14 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 counter = 0
+lisas = list[]
 while counter < 88:
-    lisas[]
-    lisas.append(associations[counter]
+    lisas.append(associations[counter])
+    counter+=1
+
 print(lisas)
+
+"""
 do = False
 while do == False:
     befehl = str.lower(input("Enter e to encrypt, d to decrypt, or q to quit: "))
@@ -41,3 +45,4 @@ if befehl == 1:
 if befehl == 2:
     msg = str(input("Message: "))
     ky = str(input("Key: "))
+"""
