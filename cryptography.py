@@ -26,7 +26,7 @@ def encrypt(msgin, kyin):
         msglis.append(msgin(counter1))
     return msglis
 
-"""
+
 do = False
 while do == False:
     befehl = str.lower(input("Enter e to encrypt, d to decrypt, or q to quit: "))
@@ -34,7 +34,7 @@ while do == False:
         do = True
         msg = str(input("Message: "))
         ky = str(input("Key: "))
-
+        encrypt(msg, ky)
     elif befehl == 'd':
         do = True
         msg = str(input("Message: "))
@@ -53,4 +53,4 @@ if befehl == 1:
 if befehl == 2:
     msg = str(input("Message: "))
     ky = str(input("Key: "))
-"""
+
