@@ -15,8 +15,16 @@ lisas = []
 while counter < 88:
     lisas.append(associations[counter])
     counter+=1
+aslis = list(range(0,86))
+lis(list(zip(aslis, lisas)))
 
-print(lisas)
+def encrypt(msgin, kyin):
+    counter1 = 0
+    laenge = len(msgin)
+    msglis = []
+    while counter1 < laenge+1:
+        msglis.append(msgin(counter1))
+    
 
 """
 do = False
