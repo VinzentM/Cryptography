@@ -24,7 +24,7 @@ def encrypt(msgin, kyin):
     msglis = []
     while counter1 < laenge+1:
         msglis.append(msgin(counter1))
-    
+    return msglis
 
 """
 do = False
