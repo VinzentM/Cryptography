@@ -11,7 +11,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 counter = 0
-lisas = list[]
+lisas = []
 while counter < 88:
     lisas.append(associations[counter])
     counter+=1
