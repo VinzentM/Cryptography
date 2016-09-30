@@ -14,9 +14,13 @@ do = False
 while do == False:
     befehl = str.lower(input("Enter e to encrypt, d to decrypt, or q to quit: "))
     if befehl == 'e':
-        do = 1
+        do = True
+        msg = str(input("Message: "))
+        ky = str(input("Key: "))
     elif befehl == 'd':
-        do = 2
+        do = True
+        msg = str(input("Message: "))
+        ky = str(input("Key: "))
     elif befehl == 'q':
         do = 3
         print("Goodbye")
