@@ -16,16 +16,24 @@ while counter < 84:
     lisas.append(associations[counter])
     counter+=1
 aslis = list(range(0,86))
-lis(list(zip(aslis, lisas)))
-
+lis = list(zip(aslis, lisas))
+counter1 = 0
 def encrypt(msgin, kyin):
     counter1 = 0
-    laenge = len(msgin)
+    counter1 = int(counter1)
+    laenge = int(len(msgin))
     msglis = []
-    while counter1 < laenge+1:
-        msglis.append(msgin(counter1))
-    return msglis
-
+    msglis = list(msglis)
+    eqmsg = []
+    while counter1 < laenge:
+        msglis = list(msglis)
+        msglis.append(msgin[counter1])
+        counter1 += 1
+        eqmsg.append(associations.find(msgin[counter1]))
+        
+    print(msglis)
+    print(eqmsg)
+    do = False
 
 do = False
 while do == False:
@@ -35,6 +43,7 @@ while do == False:
         msg = str(input("Message: "))
         ky = str(input("Key: "))
         encrypt(msg, ky)
+        do = False
     elif befehl == 'd':
         do = True
         msg = str(input("Message: "))
@@ -44,13 +53,6 @@ while do == False:
         print("Goodbye")
 
     else:
-        do = 0
+        do = True
         print("Did not understand command, try again.")
-
-if befehl == 1:
-    msg = str(input("Message: "))
-    ky = str(input("Key: "))
-if befehl == 2:
-    msg = str(input("Message: "))
-    ky = str(input("Key: "))
-
+        do = False
