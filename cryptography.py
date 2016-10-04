@@ -29,10 +29,18 @@ def encrypt(msgin, kyin):
         msglis = list(msglis)
         msglis.append(msgin[counter1])
         counter1 += 1
-        eqmsg.append(associations.find(msgin[counter1]))
-        
-    print(msglis)
-    print(eqmsg)
+        eqmsg.append(associations.find(msgin[counter1-1]))
+    laengeky = int(len(kyin))
+    kywrk = kyin
+    if laengeky < laenge+1:
+        laengekywrk = int(len(kywrk))
+        while laengekywrk < laenge+10:
+            kywrk = kywrk + kyin
+        print(kywrk)
+
+        #eqmsg.append(associations.find(msgin[counter1-1]))
+    #print(msglis) its the msg in a list
+    #print(eqmsg) its the msg in the eq in a list
     do = False
 
 do = False
