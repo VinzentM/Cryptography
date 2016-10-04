@@ -36,6 +36,7 @@ def encrypt(msgin, kyin):
         laengekywrk = int(len(kywrk))
         while laengekywrk < laenge:
             kywrk = kywrk + kyin
+            laengekywrk = int(len(kywrk))
     #    print(kywrk)
 
         #eqmsg.append(associations.find(msgin[counter1-1]))
