@@ -39,9 +39,10 @@ def encrypt(msgin, kyin):
             kywrk = kywrk + kyin
             laengekywrk = int(len(kywrk))
         laengekywrk = int(len(kywrk))
-        if laengekywrk > laenge:
-            while laengekywrk == laenge:
-                kywrk  = kywrk[:-1]
+        while laengekywrk == laenge:
+                print(laenge)
+                print(laengekywrk)
+                kywrk = kywrk[:-1]
                 laengekywrk = int(len(kywrk))
         print(kywrk)
 
