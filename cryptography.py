@@ -31,22 +31,21 @@ def encrypt(msgin, kyin):
         counter1 += 1
         eqmsg.append(associations.find(msgin[counter1-1]))
     #edit lenght of the ky
-    laengeky = int(len(kyin))
-    kywrk = kyin
-    if laengeky < laenge+1:
+    laengeky(laenge, kyin)
+    
+def kyanpassen(msglaenge, kywrk1):
+    laengeky = int(len(kywrk1))
+    kywrk = kywrk1
+    if laengeky < msglaenge+1:
         laengekywrk = int(len(kywrk))
-        while laengekywrk < laenge:
+        while laengekywrk < msglaenge:
             kywrk = kywrk + kyin
             laengekywrk = int(len(kywrk))
         laengekywrk = int(len(kywrk))
-        print(kywrk)
-        if laengekywrk > laenge:
-            while laengekywrk == laenge:
-                print("22")
+        if laengekywrk > msglaenge:
+            while laengekywrk > msglaenge:
                 kywrk = kywrk[:-1]
                 laengekywrk = int(len(kywrk))
-    print(kywrk)
-
         #eqmsg.append(associations.find(msgin[counter1-1]))
     #print(msglis) its the msg in a list
     #print(eqmsg) its the msg in the eq in a list
