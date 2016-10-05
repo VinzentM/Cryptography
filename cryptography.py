@@ -38,8 +38,11 @@ def encrypt(msgin, kyin):
         while laengekywrk < laenge:
             kywrk = kywrk + kyin
             laengekywrk = int(len(kywrk))
+        laengekywrk = int(len(kywrk))
         if laengekywrk > laenge:
-            
+            while laengekywrk == laenge:
+                kywrk  = kywrk[::-1]
+                laengekywrk = int(len(kywrk))
         print(kywrk)
 
         #eqmsg.append(associations.find(msgin[counter1-1]))
