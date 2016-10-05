@@ -39,12 +39,13 @@ def encrypt(msgin, kyin):
             kywrk = kywrk + kyin
             laengekywrk = int(len(kywrk))
         laengekywrk = int(len(kywrk))
-        while laengekywrk == laenge:
-                print(laenge)
-                print(laengekywrk)
+        print(kywrk)
+        if laengekywrk > laenge:
+            while laengekywrk == laenge:
+                print("22")
                 kywrk = kywrk[:-1]
                 laengekywrk = int(len(kywrk))
-        print(kywrk)
+    print(kywrk)
 
         #eqmsg.append(associations.find(msgin[counter1-1]))
     #print(msglis) its the msg in a list
