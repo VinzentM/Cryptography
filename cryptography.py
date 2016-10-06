@@ -23,32 +23,41 @@ def encrypt(msgin, kyin):
     counter1 = int(counter1)
     laenge = int(len(msgin))
     msglis = []
-    msglis = list(msglis)
     eqmsg = []
     while counter1 < laenge:
-        msglis = list(msglis)
         msglis.append(msgin[counter1])
+        eqmsg.append(associations.find(msgin[counter1]))
         counter1 += 1
-        eqmsg.append(associations.find(msgin[counter1-1]))
     #edit lenght of the ky
-    laengeky(laenge, kyin)
+    kyanpassen(laenge, kyin)
+    # here I need kydone
+    kylis = []
+    eqky = []
+    counter2 = 0
+    laengekydone = int(len(kydone))
+    while counter2 < laengekydone:
+        kylis.append(kydone[counter2])
+        eqky.append(associations.find(kydone[counter2]))
+        counter2 += 1
+        
+    
     
 def kyanpassen(msglaenge, kywrk1):
+    
     laengeky = int(len(kywrk1))
     kywrk = kywrk1
     if laengeky < msglaenge+1:
         laengekywrk = int(len(kywrk))
         while laengekywrk < msglaenge:
-            kywrk = kywrk + kyin
+            kywrk = kywrk + kywrk1
             laengekywrk = int(len(kywrk))
         laengekywrk = int(len(kywrk))
         if laengekywrk > msglaenge:
             while laengekywrk > msglaenge:
                 kywrk = kywrk[:-1]
                 laengekywrk = int(len(kywrk))
-        #eqmsg.append(associations.find(msgin[counter1-1]))
-    #print(msglis) its the msg in a list
-    #print(eqmsg) its the msg in the eq in a list
+    kywrk = kydone
+    return kydone
     do = False
 
 do = False
