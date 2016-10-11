@@ -29,7 +29,6 @@ def encrypt(msgin, kyin):
         eqmsg.append(associations.find(msgin[counter1]))
         counter1 += 1
     kydone = kyanpassen(laenge, kyin)
-    print(kydone)
     kylis = []
     eqky = []
     counter2 = 0
