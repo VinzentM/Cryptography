@@ -53,6 +53,7 @@ def encrypt(msgin, kyin):
     dcryptd = []
     while counter5 < laengekydone:
         dcryptd.append(associations[wrkend[counter5]])
+        counter += 1
     print(dcyptd)
     #
     #
