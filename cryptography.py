@@ -20,7 +20,6 @@ lis = list(zip(aslis, lisas))
 counter1 = 0
 def encrypt(msgin, kyin):
     counter1 = 0
-    counter1 = int(counter1)
     laenge = int(len(msgin))
     msglis = []
     eqmsg = []
@@ -48,13 +47,47 @@ def encrypt(msgin, kyin):
         if wrkend[counter4] > 84:
             wrkend[counter4] = int(wrkend[counter4])-int(85)
         counter4 += 1
-    print(wrkend)
     counter5 = 0
-    dcryptd = []
+    cryptd = []
     while counter5 < laengekydone:
-        dcryptd.append(associations[wrkend[counter5]])
+        cryptd.append(associations[wrkend[counter5]])
         counter5 += 1
-    print(''.join(dcryptd))
+    print(''.join(cryptd))
+def decrypt(msgin, kyin):
+    counter1 = 0
+    laenge = int(len(msgin))
+    msglis = []
+    eqmsg = []
+    while counter1 < laenge:
+        msglis.append(msgin[counter1])
+        eqmsg.append(associations.find(msgin[counter1]))
+        counter1 += 1
+    kydone = kyanpassen(laenge, kyin)
+    kylis = []
+    eqky = []
+    counter2 = 0
+    laengekydone = int(len(kydone))
+    while counter2 < laengekydone:
+        kylis.append(kydone[counter2])
+        eqky.append(associations.find(kydone[counter2]))
+        counter2 += 1
+    wrkend = []
+    counter3 = 0
+    while counter3 < laengekydone:
+        wrkend.append(int(eqky[counter3])-int(eqmsg[counter3]))
+        counter3+=1
+    #check negative
+    counter4 = 0
+    while laengekydone < counter4:
+        if wrkend[counter4] < 0:
+            wrkend[counter4] = int(wrkend[counter4])+int(85)
+        counter4 += 1
+    counter5 = 0
+    cryptd = []
+    while counter5 < laengekydone:
+        cryptd.append(associations[wrkend[counter5]])
+        counter5 += 1
+    print(''.join(cryptd))
 def kyanpassen(msglaenge, kywrk1):
     
     laengeky = int(len(kywrk1))
@@ -86,6 +119,8 @@ while do == False:
         do = True
         msg = str(input("Message: "))
         ky = str(input("Key: "))
+        decrypt(msg, ky)
+        do = False
     elif befehl == 'q':
         do = 3
         print("Goodbye")
