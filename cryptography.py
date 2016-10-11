@@ -29,16 +29,23 @@ def encrypt(msgin, kyin):
         eqmsg.append(associations.find(msgin[counter1]))
         counter1 += 1
     #edit lenght of the ky
-    kyanpassen(laenge, kyin)
+    kydone = kyanpassen(laenge, kyin)
     # here I need kydone
+    print(kydone)
     kylis = []
     eqky = []
     counter2 = 0
     laengekydone = int(len(kydone))
+    print(counter2)
+    print(laengekydone)
     while counter2 < laengekydone:
         kylis.append(kydone[counter2])
         eqky.append(associations.find(kydone[counter2]))
         counter2 += 1
+    wrkend = []
+    counter3 = 0
+    while counter3 < laengekydone+1:
+        wrkend.append(int(eqky[counter3])+int(eqmsg[counter3])
         
     
     
@@ -56,8 +63,8 @@ def kyanpassen(msglaenge, kywrk1):
             while laengekywrk > msglaenge:
                 kywrk = kywrk[:-1]
                 laengekywrk = int(len(kywrk))
-    kywrk = kydone
-    return kydone
+    kydonedef = kywrk
+    return kydonedef
     do = False
 
 do = False
