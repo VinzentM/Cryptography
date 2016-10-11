@@ -80,7 +80,7 @@ def decrypt(msgin, kyin):
     counter4 = 0
     while laengekydone < counter4:
         if wrkend[counter4] < 0:
-            wrkend[counter4] = int(wrkend[counter4])+int(85)
+            wrkend[counter4] = int(wrkend[counter4])+int(84)
         counter4 += 1
     counter5 = 0
     cryptd = []
