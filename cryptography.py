@@ -53,19 +53,8 @@ def encrypt(msgin, kyin):
     dcryptd = []
     while counter5 < laengekydone:
         dcryptd.append(associations[wrkend[counter5]])
-        counter += 1
-    print(dcyptd)
-    #
-    #
-    #
-    #
-    #       now get back to letters
-    #       with:
-    #       associations[index]
-    #
-    #
-    #
-    #
+        counter5 += 1
+    print(''.join(dcryptd))
 def kyanpassen(msglaenge, kywrk1):
     
     laengeky = int(len(kywrk1))
