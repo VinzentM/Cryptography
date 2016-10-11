@@ -49,7 +49,18 @@ def encrypt(msgin, kyin):
             wrkend[counter4] = int(wrkend[counter4])-int(83)
         counter4 += 1
     print(wrkend)
-    
+    #
+    #
+    #
+    #
+    #
+    #       now get back to letters
+    #       with:
+    #       associations[index]
+    #
+    #
+    #
+    #
 def kyanpassen(msglaenge, kywrk1):
     
     laengeky = int(len(kywrk1))
