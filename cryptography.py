@@ -46,10 +46,14 @@ def encrypt(msgin, kyin):
     counter4 = 0
     while laengekydone > counter4:
         if wrkend[counter4] > 84:
-            wrkend[counter4] = int(wrkend[counter4])-int(83)
+            wrkend[counter4] = int(wrkend[counter4])-int(85)
         counter4 += 1
     print(wrkend)
-    #
+    counter5 = 0
+    dcryptd = []
+    while counter5 < laengekydone:
+        dcryptd.append(associations[wrkend[counter5]])
+    print(dcyptd)
     #
     #
     #
