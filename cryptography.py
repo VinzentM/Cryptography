@@ -74,20 +74,23 @@ def decrypt(msgin, kyin):
     wrkend = []
     counter3 = 0
     while counter3 < laengekydone:
-        wrkend.append(int(eqky[counter3])-int(eqmsg[counter3]))
+        wrkend.append(eqky[counter3]-eqmsg[counter3])
         counter3+=1
     #check negative
     counter4 = 0
-    while laengekydone < counter4:
-        if wrkend[counter4] < 0:
-            wrkend[counter4] = int(wrkend[counter4])+int(85)
+    while laengekydone > counter4:
+        if wrkend[counter4] <= -1:
+            print(wrkend[counter4])
+            wrkend[counter4] = int(wrkend[counter4]+int(85))
+            print(wrkend[counter4])
+            print()
         counter4 += 1
     counter5 = 0
-    cryptd = []
+    dcryptd = []
     while counter5 < laengekydone:
-        cryptd.append(associations[wrkend[counter5]])
+        dcryptd.append(associations[wrkend[counter5]])
         counter5 += 1
-    print(''.join(cryptd))
+    print(''.join(dcryptd))
 def kyanpassen(msglaenge, kywrk1):
     laengeky = int(len(kywrk1))
     kywrk = kywrk1
