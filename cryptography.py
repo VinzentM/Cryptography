@@ -74,16 +74,13 @@ def decrypt(msgin, kyin):
     wrkend = []
     counter3 = 0
     while counter3 < laengekydone:
-        wrkend.append(eqky[counter3]-eqmsg[counter3])
+        wrkend.append(eqmsg[counter3]-eqky[counter3])
         counter3+=1
     #check negative
     counter4 = 0
     while laengekydone > counter4:
         if wrkend[counter4] <= -1:
-            print(wrkend[counter4])
             wrkend[counter4] = int(wrkend[counter4]+int(85))
-            print(wrkend[counter4])
-            print()
         counter4 += 1
     counter5 = 0
     dcryptd = []
