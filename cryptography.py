@@ -121,8 +121,6 @@ while do == False:
         do = False
     elif befehl == 'q':
         do = 3
-        print("Goodbye")
+        print("Goodbye!")
     else:
-        do = True
         print("Did not understand command, try again.")
-        do = False
