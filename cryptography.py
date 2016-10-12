@@ -12,7 +12,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 counter = 0
 lisas = []
-while counter < 84:
+while counter < 85:
     lisas.append(associations[counter])
     counter+=1
 aslis = list(range(0,86))
