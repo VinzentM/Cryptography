@@ -80,7 +80,7 @@ def decrypt(msgin, kyin):
     counter4 = 0
     while laengekydone < counter4:
         if wrkend[counter4] < 0:
-            wrkend[counter4] = int(wrkend[counter4])+int(84)
+            wrkend[counter4] = int(wrkend[counter4])+int(85)
         counter4 += 1
     counter5 = 0
     cryptd = []
@@ -89,7 +89,6 @@ def decrypt(msgin, kyin):
         counter5 += 1
     print(''.join(cryptd))
 def kyanpassen(msglaenge, kywrk1):
-    
     laengeky = int(len(kywrk1))
     kywrk = kywrk1
     if laengeky < msglaenge+1:
@@ -105,7 +104,6 @@ def kyanpassen(msglaenge, kywrk1):
     kydonedef = kywrk
     return kydonedef
     do = False
-
 do = False
 while do == False:
     befehl = str.lower(input("Enter e to encrypt, d to decrypt, or q to quit: "))
@@ -124,7 +122,6 @@ while do == False:
     elif befehl == 'q':
         do = 3
         print("Goodbye")
-
     else:
         do = True
         print("Did not understand command, try again.")
